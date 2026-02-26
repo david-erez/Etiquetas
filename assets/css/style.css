@@ -1,0 +1,44 @@
+body {
+    
+    background: linear-gradient(to right, #8ee595, #c3d8cc);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 200px;  
+    margin-top: 40px;    
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+li {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 12px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
