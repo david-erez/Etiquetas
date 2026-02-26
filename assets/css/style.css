@@ -52,3 +52,15 @@ h2 {
 .btn:hover {
     background-color: #1a252f;
 }
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  color: #c7254e;
+  font-family: monospace;
+}
