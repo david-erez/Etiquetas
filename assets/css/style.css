@@ -18,27 +18,35 @@ h2 {
     font-size: 35px;
     margin-top: 30px;
     color: #333;
+    margin-left: 60px;
+}
+.layout {
+    display: flex;
+    min-height: 100vh;
 }
 
-
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px 80px;
+/* MENÚ IZQUIERDA */
+.menu {
+    width: 250px;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
+/* LINKS */
+.menu a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #222;
+    transition: 0.3s;
 }
 
-.card h3 {
-    margin-top: 0;
+.menu a:hover {
+    transform: translateX(8px);
+    color: #1b5e20;
 }
+
 
 .btn {
     display: inline-block;
@@ -53,6 +61,14 @@ h2 {
     background-color: #1a252f;
 }
 
+
+
+.contenido {
+    
+    flex: 1;
+    padding: 100px;
+
+}
 pre {
   background-color: #f4f4f4;
   padding: 10px;
