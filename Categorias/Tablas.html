@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaiross</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <header>Formularios</header>>
+    <header>Tablas</header>
     <nav>
         <a href="../Index.html">Inicio</a>
         <a href="Estructurales.html">Estructurales</a>
         <a href="Listas.html">Listas</a>
         <a href="Formularios.html">Formularios</a>
-        <a href="Tablas.html">Tablas</a>
+        <a href="Tablas.html" class="active">Tablas</a>
         <a href="Multimedia.html">Multimedia</a>
     </nav>
     <main>
         <h1>Tablas</h1>
         <p>Las tablas en HTML se utilizan para organizar y presentar datos de manera estructurada. Una tabla se compone de filas y columnas, donde cada intersección de una fila y una columna se llama celda. Las tablas son útiles para mostrar información tabular, como horarios, precios, resultados de encuestas, entre otros.</p>
         <h2>Ejemplo de una tabla:</h2>
-        <table border="1">
+        <figure class="examples">
+            <figcaption>Ejemplo de tabla</figcaption>
+            <table border="1">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -43,31 +45,35 @@
                 </tr>
             </tbody>
         </table>
-        <pre>
-            <code>
-                &lt;table border="1"&gt;
-                    &lt;thead&gt;
-                        &lt;tr&gt;
-                            &lt;th&gt;Nombre&lt;/th&gt;
-                            &lt;th&gt;Edad&lt;/th&gt;
-                            &lt;th&gt;Ciudad&lt;/th&gt;
-                        &lt;/tr&gt;
-                    &lt;/thead&gt;
-                    &lt;tbody&gt;
-                        &lt;tr&gt;
-                            &lt;td&gt;Juan&lt;/td&gt;
-                            &lt;td&gt;25&lt;/td&gt;
-                            &lt;td&gt;México&lt;/td&gt;
-                        &lt;/tr&gt;
-                        &lt;tr&gt;
-                            &lt;td&gt;Maria&lt;/td&gt;
-                            &lt;td&gt;30&lt;/td&gt;
-                            &lt;td&gt;Madrid&lt;/td&gt;
-                        &lt;/tr&gt;
-                    &lt;/tbody&gt;
-                &lt;/table&gt;
-            </code>
-        </pre>
+        </figure>
+        <figure class="examples">
+            <figcaption>Ejemplo de código de la tabla</figcaption>
+            <pre>
+                <code>
+                    &lt;table border="1"&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Nombre&lt;/th&gt;
+                                &lt;th&gt;Edad&lt;/th&gt;
+                                &lt;th&gt;Ciudad&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Juan&lt;/td&gt;
+                                &lt;td&gt;25&lt;/td&gt;
+                                &lt;td&gt;México&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Maria&lt;/td&gt;
+                                &lt;td&gt;30&lt;/td&gt;
+                                &lt;td&gt;Madrid&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                </code>
+            </pre>
+        </figure>
 
         
         <h2>Elementos de una tabla:</h2>
@@ -82,3 +88,4 @@
 
     </main>
 </body>
+</html>

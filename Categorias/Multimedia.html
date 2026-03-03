@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaiross</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <header>Formularios</header>>
+    <header>Multimedia</header>
     <nav>
         <a href="../Index.html">Inicio</a>
         <a href="Estructurales.html">Estructurales</a>
         <a href="Listas.html">Listas</a>
         <a href="Formularios.html">Formularios</a>
         <a href="Tablas.html">Tablas</a>
-        <a href="Multimedia.html">Multimedia</a>
+        <a href="Multimedia.html" class="active">Multimedia</a>
     </nav>
     <main>
         <h1>Elementos Multimedia</h1>
@@ -26,22 +26,31 @@
         <ul>
             <li><strong>&lt;img&gt;</strong>: Se utiliza para insertar imágenes en una página web. El atributo "src" se utiliza para especificar la URL de la imagen, mientras que el atributo "alt" proporciona una descripción alternativa de la imagen para mejorar la accesibilidad.</li>
             <h5>Ejemplo de uso de &lt;img&gt;:</h5>
-            <pre>
-                <code>
-                    &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
-                </code>
-            </pre>
+            <figure class="examples">
+                <figcaption>Ejemplo de &lt;img&gt;</figcaption>
+                <pre>
+                    <code>
+                        &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
+                    </code>
+                </pre>
+            </figure>
 
-            <img src="../assets/img/Multimedia/img.png" alt="Ejemplo de img">
+            <figure class="examples">
+                <img src="../assets/img/Multimedia/img.png" alt="Ejemplo de img">
+                <figcaption>Ejemplo de imagen</figcaption>
+            </figure>
 
             <li><strong>&lt;audio&gt;</strong>: Se utiliza para insertar archivos de audio en una página web. El atributo "src" se utiliza para especificar la URL del archivo de audio, y el atributo "controls" agrega controles de reproducción al elemento de audio.</li>
             <h5>Ejemplo de uso de &lt;audio&gt;:</h5>
-            <pre>
-                <code>
-                    &lt;audio src="ruta/del/audio.mp3" controls&gt;&lt;/audio&gt;
-                </code>
-            </pre>
-            <audio src="../assets/audio/audio.mp3" controls></audio>
+            <figure class="examples">
+                <figcaption>Ejemplo de &lt;audio&gt;</figcaption>
+                <pre>
+                    <code>
+                        &lt;audio src="ruta/del/audio.mp3" controls&gt;&lt;/audio&gt;
+                    </code>
+                </pre>
+                <audio src="../assets/audio/audio.mp3" controls></audio>
+            </figure>
             <h5>atributos:</h5>
             <ol>
                 <li><strong>autoplay</strong>: Reproduce automáticamente el audio al cargar la página.</li>
@@ -59,12 +68,15 @@
             <audio src="../assets/audio/audio.mp3" controls autoplay loop></audio>
             <li><strong>&lt;video&gt;</strong>: Se utiliza para insertar archivos de video en una página web. El atributo "src" se utiliza para especificar la URL del archivo de video, y el atributo "controls" agrega controles de reproducción al elemento de video.</li>
             <h5>Ejemplo de uso de &lt;video&gt;:</h5>
-            <pre>
-                <code>
-                    &lt;video src="ruta/del/video.mp4" controls&gt;&lt;/video&gt;
-                </code> 
-            </pre>
-            <video src="../assets/video/video.mp4" controls></video>
+            <figure class="examples">
+                <figcaption>Ejemplo de &lt;video&gt;</figcaption>
+                <pre>
+                    <code>
+                        &lt;video src="ruta/del/video.mp4" controls&gt;&lt;/video&gt;
+                    </code> 
+                </pre>
+                <video src="../assets/video/video.mp4" controls></video>
+            </figure>
             <h5>atributos:</h5>
             <li>tiene los mismos atributos que el audio, pero además tiene el atributo "poster" que se utiliza para especificar una imagen que se muestra antes de que el video comience a reproducirse.</li>
             <h4>ejemplo de uso de atributos:</h4>
@@ -76,25 +88,31 @@
             <video src="../assets/video/video.mp4" controls autoplay loop poster="../assets/img/Multimedia/poster.png"></video>
             <li><strong>&lt;iframe&gt;</strong>: Se utiliza para insertar contenido externo en una página web, como videos de YouTube, mapas de Google Maps, etc. El atributo "src" se utiliza para especificar la URL del contenido externo.</li>
             <h5>Ejemplo de uso de &lt;iframe&gt;:</h5>
-            <pre>   
-                <code>
-                    &lt;iframe src="https://www.youtube.com/embed/video_id" width="560" height="315" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-                </code> 
-            </pre>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXc" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <figure class="examples">
+                <figcaption>Ejemplo de &lt;iframe&gt;</figcaption>
+                <pre>   
+                    <code>
+                        &lt;iframe src="https://www.youtube.com/embed/video_id" width="560" height="315" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+                    </code> 
+                </pre>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXc" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </figure>
             <li><strong>&lt;figure&gt;</strong>: Se utiliza para agrupar contenido multimedia, como imágenes o videos, junto con su descripción. El elemento <code>&lt;figcaption&gt;</code> se utiliza para proporcionar una descripción o leyenda para el contenido multimedia dentro del elemento <code>&lt;figure&gt;</code>.</li>
             <h5>Ejemplo de uso de &lt;figure&gt; y &lt;figcaption&gt;:</h5>
-            <pre>
-                <code>
-                    &lt;figure&gt;
-                        &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
-                        &lt;figcaption&gt;Esta es una descripción de la imagen.&lt;/figcaption&gt;
-                    &lt;/figure&gt;
-                </code> 
-            </pre>
-            <figure>
-                <img src="../assets/img/Multimedia/figure.png" alt="Ejemplo de figure">
-                <figcaption>Esta es una descripción de la imagen.</figcaption>
+            <figure class="examples">
+                <figcaption>Ejemplo de uso de &lt;figure&gt; y &lt;figcaption&gt;</figcaption>
+                <pre>
+                    <code>
+                        &lt;figure&gt;
+                            &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
+                            &lt;figcaption&gt;Esta es una descripción de la imagen.&lt;/figcaption&gt;
+                        &lt;/figure&gt;
+                    </code> 
+                </pre>
+                <figure>
+                    <img src="../assets/img/Multimedia/figure.png" alt="Ejemplo de figure">
+                    <figcaption>Esta es una descripción de la imagen.</figcaption>
+                </figure>
             </figure>
         </ul>
         <p>Estos elementos multimedia son fundamentales para crear páginas web atractivas e interactivas, permitiendo a los desarrolladores incorporar contenido audiovisual de manera efectiva.</p>

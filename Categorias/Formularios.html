@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaiross</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <header>Formularios</header>>
+    <header>Formularios</header>
     <nav>
         <a href="../Index.html">Inicio</a>
         <a href="Estructurales.html">Estructurales</a>
         <a href="Listas.html">Listas</a>
-        <a href="Formularios.html">Formularios</a>
+        <a href="Formularios.html" class="active">Formularios</a>
         <a href="Tablas.html">Tablas</a>
         <a href="Multimedia.html">Multimedia</a>
     </nav>
@@ -27,87 +27,122 @@
                 interactivos que pueden recopilar datos, realizar búsquedas, enviar mensajes, entre otras funciones.
                 Algunos de los elementos de formularios más comunes incluyen:</p>
 
-            <ul>
+            <div class="examples">
                 <article>
                     <h4>Dato importante</h4>
                     <p>Los formularios son fundamentales para la interacción del usuario con un sitio web, permitiendo
                         la recopilación de datos y la comunicación entre el usuario y el servidor.</p>
                 </article>
-                <br>
-                <form>
+
+                <form id="demo-form" action="#" method="post" novalidate>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre">
+
                     <label for="edad">Edad:</label>
                     <input type="number" id="edad" name="edad">
 
+                    <fieldset>
+                        <legend>Opciones</legend>
+                        <input type="radio" id="opcion1" name="opciones" value="opcion1">
+                        <label for="opcion1">Seleccionar opción 1</label>
+                        <input type="radio" id="opcion2" name="opciones" value="opcion2">
+                        <label for="opcion2">Seleccionar opción 2</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vehículos</legend>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Tengo una bicicleta</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Tengo un coche</label><br>
+                    </fieldset>
 
                     <button type="submit">Enviar</button>
-
-                    
-                </form>
-                <form>
-                    <input type="radio" id="opcion1" name="opciones" value="opcion1">
-                    <label for="opcion1">Seleccionar opción 1</label>
-                    <input type="radio" id="opcion2" name="opciones" value="opcion2">
-                    <label for="opcion2">Seleccionar opción 2</label>
-
-                </form>
-                <form>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> tengo una bicicleta</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> tengo un coche</label><br>
                 </form>
 
 
 
-                <li><strong>&lt;form&gt;</strong>: Define un formulario HTML para recopilar información del usuario.
-                </li>
+                <p><strong>&lt;form&gt;</strong>: Define un formulario HTML para recopilar información del usuario.</p>
                 <h5>ejemplo:</h5>
-                <img src="../assets/img/Formularios/form.png" alt="Ejemplo de form">
-                <pre>
-                    <code>
-                    &lt;form&gt;
-                    &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
-                    &lt;label for="vehicle1"&gt;Tengo una bicicleta&lt;/label&gt;&lt;br&gt;
+                <figure class="examples">
+                    <figcaption>Ejemplo de &lt;form&gt; con checkboxes</figcaption>
+                    <img src="../assets/img/Formularios/form.png" alt="Ejemplo de form">
+                    <pre>
+                        <code>
+                            &lt;form&gt;
+                            &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+                            &lt;label for="vehicle1"&gt;Tengo una bicicleta&lt;/label&gt;&lt;br&gt;
 
-                    &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
-                    &lt;label for="vehicle2"&gt;Tengo un coche&lt;/label&gt;&lt;br&gt;
-                    &lt;/form&gt;
-                    </code>
+                            &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+                            &lt;label for="vehicle2"&gt;Tengo un coche&lt;/label&gt;&lt;br&gt;
+                            &lt;/form&gt;
+                        </code>
                     </pre>
+                </figure>
+                <h5>ejemplo de formulario completo:</h5>
+                <figure class="examples">
+                    <figcaption>Formulario interactivo de ejemplo</figcaption>
+                    <form>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Tengo una bicicleta</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Tengo un coche</label><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </figure>
 
-                <li><strong>&lt;input&gt;</strong>: Define un campo de entrada en un formulario HTMLlos tipos de input
-                    son: text, number, email, password, radio, checkbox, button, submit y reset. cada uno se utiliza
-                    para diferentes propósitos y deben de llevar los atributos "type", "name", "id" y "value" para funcionar correctamente.</li>
+                <p><strong>&lt;input&gt;</strong>: Define un campo de entrada en un formulario HTML. Los tipos de input
+                    son: text, number, email, password, radio, checkbox, button, submit y reset. Cada uno se utiliza
+                    para diferentes propósitos y deben llevar los atributos "type", "name", "id" y "value" para funcionar correctamente.</p>
                 <h5>ejemplo:</h5>
-                <img src="../assets/img/Formularios/input.png" alt="Ejemplo de input">
+                <figure class="examples">
+                    <figcaption>Ejemplo de &lt;input&gt;</figcaption>
+                    <img src="../assets/img/Formularios/input.png" alt="Ejemplo de input">
+                </figure>
             <h4>ejemplo de diferentes tipos de input:</h4>
-            <pre>
-            <code>&lt;form&gt;
-            &lt;input type="text" id="nombre" name="nombre"&gt;
-
-            &lt;input type="number" id="edad" name="edad"&gt; 
-            &lt;input type="radio" id="opcion1" name="opciones" value="opcion1"&gt;
-            </code>
-
-            </pre>
-
-             <li><strong>&lt;label&gt;</strong>: Define una etiqueta para un elemento de formulario HTML un label se utiliza para asociar texto con un elemento de formulario, mejorando la accesibilidad y la usabilidad del formulario y debe de llevar los atributos "for" y "id" para que estén correctamente asociados.</li>
-                <h5>ejemplo:</h5>
-                <img src="../assets/img/Formularios/label.png" alt="Ejemplo de label">
+            <figure class="examples">
+                <figcaption>Ejemplo de código: distintos tipos de input</figcaption>
                 <pre>
                     <code>
-                    &lt;form&gt;
-                    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
-                    &lt;input type="text" id="nombre" name="nombre"&gt;
-                    &lt;/form&gt;
+                        &lt;form&gt;
+                        &lt;input type="text" id="nombre" name="nombre"&gt;
+                        &lt;input type="number" id="edad" name="edad"&gt;
+                        &lt;input type="radio" id="opcion1" name="opciones" value="opcion1"&gt;
+                        &lt;/form&gt;
                     </code>
-                    </pre>
+                </pre>
+            </figure>
+            <h4>ejemplo de formulario con diferentes tipos de input:</h4>
+            <figure class="examples">
+                <figcaption>Formulario de ejemplo con varios inputs</figcaption>
+                <form>
+                    <input type="text" id="nombre" name="nombre">
+                    <input type="number" id="edad" name="edad">
+                    <input type="radio" id="opcion1" name="opciones" value="opcion1">
+                </form>
+            </figure>
 
-                <li><strong>&lt;button&gt;</strong>: Define un botón que puede ser clickeado por el usuario. el button puede tener diferentes tipos como "submit", "reset" o "button". el submit si se usa dentro de un formulario, envía los datos del formulario al servidor. el reset reinicia los valores de los campos del formulario y el button no tiene una acción predeterminada.</li>
+                 <p><strong>&lt;label&gt;</strong>: Define una etiqueta para un elemento de formulario HTML. Un label se utiliza para asociar texto con un elemento de formulario, mejorando la accesibilidad y la usabilidad del formulario y debe llevar los atributos "for" y "id" para que estén correctamente asociados.</p>
                 <h5>ejemplo:</h5>
-                <img src="../assets/img/Formularios/button.png" alt="Ejemplo de button">
+                <figure class="examples">
+                    <figcaption>Ejemplo de &lt;label&gt;</figcaption>
+                    <img src="../assets/img/Formularios/label.png" alt="Ejemplo de label">
+                    <pre>
+                        <code>
+                            &lt;form&gt;
+                            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+                            &lt;input type="text" id="nombre" name="nombre"&gt;
+                            &lt;/form&gt;
+                        </code>
+                    </pre>
+                </figure>
+
+                <p><strong>&lt;button&gt;</strong>: Define un botón que puede ser clickeado por el usuario. El `button` puede tener diferentes tipos como "submit", "reset" o "button". El "submit" si se usa dentro de un formulario, envía los datos del formulario al servidor. El "reset" reinicia los valores de los campos del formulario y el "button" no tiene una acción predeterminada.</p>
+                <h5>ejemplo:</h5>
+                <figure class="examples">
+                    <figcaption>Ejemplo de &lt;button&gt;</figcaption>
+                    <img src="../assets/img/Formularios/button.png" alt="Ejemplo de button">
+                </figure>
 
     </main>
 </body>
