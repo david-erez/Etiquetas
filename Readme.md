@@ -4,10 +4,6 @@ INTEGRANTES:
 
 
 
-
-
-
-
 Estructurales
 
  html = Es la raíz del documento. Contiene todo el contenido de la página.
