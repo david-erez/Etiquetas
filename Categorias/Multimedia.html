@@ -45,10 +45,11 @@
             <figure class="examples">
                 <figcaption>Ejemplo de &lt;img&gt;</figcaption>
                 <pre>
-                    <code>
+                    <code id ="codigo4">
                         &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
                     </code>
                 </pre>
+                <button class="copy" onclick="copiarCodigo('codigo4')">Copiar código</button>
             </figure>
 
             <figure class="examples">
@@ -61,11 +62,14 @@
             <figure class="examples">
                 <figcaption>Ejemplo de &lt;audio&gt;</figcaption>
                 <pre>
-                    <code>
+                    <code id="codigo5">
                         &lt;audio src="ruta/del/audio.mp3" controls&gt;&lt;/audio&gt;
                     </code>
                 </pre>
                 <audio src="../assets/audio/audio.mp3" controls></audio>
+                <br>
+                <button class="copy" onclick="copiarCodigo('codigo5')">Copiar código</button>
+
             </figure>
             <h5>atributos:</h5>
             <ol>
@@ -77,42 +81,50 @@
             </ol>
             <h4>ejemplo de uso de atributos:</h4>
             <pre>   
-                <code>
+                <code id="codigo8">
                     &lt;audio src="ruta/del/audio.mp3" controls autoplay loop&gt;&lt;/audio&gt;
                 </code>
             </pre>
             <audio src="../assets/audio/audio.mp3" controls autoplay loop></audio>
+            <button class="copy" onclick="copiarCodigo('codigo8')">Copiar código</button>
             <li><strong>&lt;video&gt;</strong>: Se utiliza para insertar archivos de video en una página web. El atributo "src" se utiliza para especificar la URL del archivo de video, y el atributo "controls" agrega controles de reproducción al elemento de video.</li>
             <h5>Ejemplo de uso de &lt;video&gt;:</h5>
             <figure class="examples">
                 <figcaption>Ejemplo de &lt;video&gt;</figcaption>
                 <pre>
-                    <code>
+                    <code id="codigo6">
                         &lt;video src="ruta/del/video.mp4" controls&gt;&lt;/video&gt;
                     </code> 
                 </pre>
+                <button class="copy" onclick="copiarCodigo('codigo6')">Copiar código</button>
+                <br>
                 <video class="video" src="../assets/img/Multimedia/video.mp4" controls></video>
             </figure>
             <h5>atributos:</h5>
             <li>tiene los mismos atributos que el audio, pero además tiene el atributo "poster" que se utiliza para especificar una imagen que se muestra antes de que el video comience a reproducirse.</li>
             <h4>ejemplo de uso de atributos:</h4>
             <pre>
-                <code>
+                <code id="codigo9">
                     &lt;video src="ruta/del/video.mp4" controls autoplay loop poster="ruta/de/la/imagen.jpg"&gt;&lt;/video&gt;
                 </code>
             </pre>
+            <button class="copy" onclick="copiarCodigo('codigo9')">Copiar código</button>
+            <br>
             <video class="video" src="../assets/img/Multimedia/video.mp4" controls autoplay loop poster="../assets/img/Multimedia/edificio.webp"></video>
             <li><strong>&lt;iframe&gt;</strong>: Se utiliza para insertar contenido externo en una página web, como videos de YouTube, mapas de Google Maps, etc. El atributo "src" se utiliza para especificar la URL del contenido externo.</li>
             <h5>Ejemplo de uso de &lt;iframe&gt;:</h5>
             <figure class="examples">
                 <figcaption>Ejemplo de &lt;iframe&gt;</figcaption>
                 <pre>   
-                    <code>
+                    <code id="codigo7">
                         &lt;iframe src="https://www.youtube.com/embed/video_id" width="560" height="315" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
                     </code> 
                 </pre>
+                <button class="copy" onclick="copiarCodigo('codigo7')">Copiar código</button>
+                <br>
             <iframe src="https://www.youtube.com/embed/ftz3NmWQUCg" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-            </figure>
+           
+        </figure>
             <li><strong>&lt;figure&gt;</strong>: Se utiliza para agrupar contenido multimedia, como imágenes o videos, junto con su descripción. El elemento <code>&lt;figcaption&gt;</code> se utiliza para proporcionar una descripción o leyenda para el contenido multimedia dentro del elemento <code>&lt;figure&gt;</code>.</li>
             <h5>Ejemplo de uso de &lt;figure&gt; y &lt;figcaption&gt;:</h5>
             <figure class="examples">
