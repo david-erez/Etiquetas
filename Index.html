@@ -10,33 +10,43 @@
 </head>
 <body>
     <h1>BLOG EDUCATIVO HTML</h1>
-    <h2>Categorias</h2>
     
 
     <div class="layout">
 
     <div class="menu">
+
+        <h2 class="menu-title">Categorías</h2>
+
+        <p class="menu-info">
+            Selecciona una categoría para ver sus etiquetas y ejemplos prácticos.
+        </p>
+
         <a href="Categorias/Estructurales.html">Estructurales</a>
         <a href="Categorias/Formularios.html">Formularios</a>
         <a href="Categorias/Listas.html">Listas</a>
         <a href="Categorias/Multimedia.html">Multimedia</a>
         <a href="Categorias/Tablas.html">Tablas</a>
 
-        <span>Modo oscuro</span>
-        <label class ="switch" for="modo">
-            <input type="checkbox" id="modo">
-            <span class="slider"></span>
-        </label> 
+        <div class="modo-container">
+            <span>Modo oscuro</span>
+            <label class="switch" for="modo">
+                <input type="checkbox" id="modo">
+                <span class="slider"></span>
+            </label>
+        </div>
+
     </div>
-    
     <div class="contenido">
-        <h2>HTML</h2>
-        <p>
-            HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
-        </p>
-    </div>
+        <div class="card">
+            <h2>HTML</h2>
+            <p>
+               HTML (HyperText Markup Language) es el lenguaje estándar utilizado para estructurar y organizar el contenido de las páginas web. Utiliza etiquetas para definir elementos como títulos, párrafos, imágenes y enlaces, permitiendo que los navegadores interpreten y muestren información de manera jerárquica. No es un lenguaje de programación, sino de marcado, siendo la base fundamental del desarrollo web.
+            </p>
+        </div>
     </div>
 
+</div>
     <!--<ul>
         <li><a href="Categorias/Estructurales.html">Estructurales</a></li>
         <p>Son las etiquetas que definen la estructura del contenido de una página web.</p>
