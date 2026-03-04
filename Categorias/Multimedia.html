@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -75,7 +76,7 @@
                         &lt;video src="ruta/del/video.mp4" controls&gt;&lt;/video&gt;
                     </code> 
                 </pre>
-                <video src="../assets/video/video.mp4" controls></video>
+                <video class="video" src="../assets/img/Multimedia/video.mp4" controls></video>
             </figure>
             <h5>atributos:</h5>
             <li>tiene los mismos atributos que el audio, pero además tiene el atributo "poster" que se utiliza para especificar una imagen que se muestra antes de que el video comience a reproducirse.</li>
@@ -85,7 +86,7 @@
                     &lt;video src="ruta/del/video.mp4" controls autoplay loop poster="ruta/de/la/imagen.jpg"&gt;&lt;/video&gt;
                 </code>
             </pre>
-            <video src="../assets/video/video.mp4" controls autoplay loop poster="../assets/img/Multimedia/poster.png"></video>
+            <video class="video" src="../assets/img/Multimedia/video.mp4" controls autoplay loop poster="../assets/img/Multimedia/edificio.webp"></video>
             <li><strong>&lt;iframe&gt;</strong>: Se utiliza para insertar contenido externo en una página web, como videos de YouTube, mapas de Google Maps, etc. El atributo "src" se utiliza para especificar la URL del contenido externo.</li>
             <h5>Ejemplo de uso de &lt;iframe&gt;:</h5>
             <figure class="examples">
@@ -95,7 +96,7 @@
                         &lt;iframe src="https://www.youtube.com/embed/video_id" width="560" height="315" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
                     </code> 
                 </pre>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXc" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ftz3NmWQUCg" width="560" height="315" frameborder="0" allowfullscreen></iframe>
             </figure>
             <li><strong>&lt;figure&gt;</strong>: Se utiliza para agrupar contenido multimedia, como imágenes o videos, junto con su descripción. El elemento <code>&lt;figcaption&gt;</code> se utiliza para proporcionar una descripción o leyenda para el contenido multimedia dentro del elemento <code>&lt;figure&gt;</code>.</li>
             <h5>Ejemplo de uso de &lt;figure&gt; y &lt;figcaption&gt;:</h5>
@@ -107,11 +108,11 @@
                             &lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;
                             &lt;figcaption&gt;Esta es una descripción de la imagen.&lt;/figcaption&gt;
                         &lt;/figure&gt;
-                    </code> 
+                    </code>     
                 </pre>
                 <figure>
-                    <img src="../assets/img/Multimedia/figure.png" alt="Ejemplo de figure">
-                    <figcaption>Esta es una descripción de la imagen.</figcaption>
+                    <img src="../assets/img/Multimedia/edificio.webp" alt="Ejemplo de figure">
+                    <figcaption>Esta es una descripción de la imagen, la cual tiene edificaciones.</figcaption>
                 </figure>
             </figure>
         </ul>

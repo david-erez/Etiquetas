@@ -129,7 +129,7 @@ form#demo-form input[type="number"] {
     box-sizing: border-box;
 }
 fieldset {
-    border: 1px solid #d2e7d2;
+    border: 1px solid #000000;
     padding: 10px 12px;
     margin-top: 12px;
     border-radius: 6px;
@@ -148,4 +148,96 @@ legend {
 }
 pre {
     font-size: 14px;
+}
+.video{
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+body.dark{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #e4e4e4;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+body.dark .menu {
+    background: rgba(228, 226, 230, 0.1);
+}
+body.dark .menu a {
+    color: #e4e4e4;
+}
+body.dark .menu a:hover {
+    color: #a5d6a7;
+}
+body.dark nav {
+    background: rgba(228, 226, 230, 0.1);
+}
+body.dark nav a {
+    color: #e4e4e4;
+}
+body.dark form#demo-form {
+    background: rgba(228, 226, 230, 0.1);
+    box-shadow: 0 2px 6px rgba(228, 226, 230, 0.1);
+}
+body.dark h1{
+    background:  #265a29;
+    font-size: larger;
+}
+
+body.dark pre {
+    background-color: #333;
+    color: #c7254e;
+}
+/* dark mode styles */
+
+.switch {
+    position : relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+/* chekbox real*/
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*found of switch*/
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/*circule*/
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*when activation */
+input:checked + .slider {
+    background-color: #111;
+}
+/*circule movation*/
+input:checked + .slider::before {
+    transform: translateX(24px);
 }

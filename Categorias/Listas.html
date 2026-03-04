@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             <figure class="examples">
                 <figcaption>Ejemplo de lista desordenada</figcaption>
                 <pre>
-                    <code>
+                    <code id="codigo1">
                         &lt;ul&gt;
                             &lt;li&gt;Elemento 1&lt;/li&gt;
                             &lt;li&gt;Elemento 2&lt;/li&gt;
@@ -37,6 +39,7 @@
                         &lt;/ul&gt;
                     </code>
                 </pre>
+                <button class="copy" onclick="copiarCodigo('codigo1')">Copiar código</button>
             </figure>
             <ul>
                 <li>elemento 1</li>
@@ -87,5 +90,6 @@
             </ol>
         </ul>
     </main>
+
 </body>
 </html>
