@@ -1,35 +1,52 @@
 body {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(to right, #8ee595, #c3d8cc);
     margin: 0;
     padding: 0;
+
+    background: 
+        linear-gradient(rgb(0, 0, 0), rgba(17, 17, 17, 0.832)),
+        url("../img/menu/1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
 h1 {
     font-size: 42px;
-    color: white;
-    background: linear-gradient(to right, #6fbf73, #8ee595);
+    color: #ff7700;
+    background: linear-gradient(to right, #ffffff00, #ffffff00);
     margin: 0;
     padding: 25px 80px;
     font-weight: 800;
     letter-spacing: 1px;
+    text-align: center;
 }
 h2 {
     font-size: 28px;
     margin: 0 0 10px 0;
-    color: #1b5e20;
+    color: #ff7700;
     font-weight: 600;
 }
 
 .menu-info {
     font-size: 14px;
-    color: #2e7d32;
+    color: #ffffff;
     line-height: 1.4;
     margin: 0 0 10px 12px;
 }
 .layout {
     display: flex;
     height: calc(100vh - 105px);
+}
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
 /* MENÚ IZQUIERDA */
@@ -39,16 +56,16 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: rgba(255,255,255,0.4);
+    background: rgba(138, 138, 138, 0.058);
     backdrop-filter: blur(6px);
-    box-shadow: 4px 0 10px rgba(0,0,0,0.05);
+    box-shadow: 4px 0 10px rgb(0, 0, 0);
 }
 
 /* LINKS */
 .menu a {
     text-decoration: none;
     font-size: 20px;
-    color: #1b5e20;
+    color: #ff7700;
     font-weight: 600;
     padding: 8px 12px;
     border-radius: 6px;
@@ -56,8 +73,8 @@ h2 {
 }
 
 .menu a:hover {
-    background-color: #2e7d32;
-    color: white;
+    background-color: #ffffff;
+    color: #ff7700;
     transform: translateX(6px);
 }
 
@@ -80,26 +97,47 @@ h2 {
 
 .contenido {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* centra verticalmente */
-    padding: 40px;
+    padding: 60px 80px;
+    max-width: 900px;
+}
+.contenido h2 {
+    margin: 0 0 20px 0;
+}
+
+.contenido p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.guia {
+    margin: 15px 0 25px 20px;
+}
+
+.guia li {
+    margin-bottom: 8px;
 }
 
 .contenido h2 {
     margin-left: 0;
 }
 
-.card {
-    background: rgba(255,255,255,0.9);
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    max-width: 700px;
-    text-align: center; /* centra texto */
-}
+
 .card h2 {
     margin-top: 0;
+}
+.card h3 {
+    margin-top: 25px;
+    color: #2e7d32;
+}
+
+.guia {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.guia li {
+    margin-bottom: 8px;
 }
 
 pre {
@@ -224,10 +262,7 @@ body.dark pre {
 }
 /* dark mode styles */
 
-body.dark .card {
-    background: rgba(255,255,255,0.05);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
+
 
 .switch {
     position : relative;
@@ -271,11 +306,27 @@ body.dark .card {
     border-radius: 50%;
 }
 
-/*when activation */
 input:checked + .slider {
     background-color: #111;
 }
-/*circule movation*/
 input:checked + .slider::before {
     transform: translateX(24px);
+}
+
+@media (max-width: 768px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
 }
