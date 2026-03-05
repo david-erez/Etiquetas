@@ -19,7 +19,7 @@
     }
 
     function copiarCodigo(id) {
-        const el = document.getElementById(id);
+      const el = document.getElementById(id);
         if (!el) {
             alert('No se encontró el código a copiar.');
             return;
