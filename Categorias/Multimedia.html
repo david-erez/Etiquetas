@@ -10,17 +10,32 @@
 </head>
 
 <body>
-    <header>Multimedia</header>
-    <nav>
-        <a href="../Index.html">Inicio</a>
-        <a href="Estructurales.html">Estructurales</a>
-        <a href="Listas.html">Listas</a>
-        <a href="Formularios.html">Formularios</a>
-        <a href="Tablas.html">Tablas</a>
-        <a href="Multimedia.html" class="active">Multimedia</a>
-    </nav>
-    <main>
-        <h1>Elementos Multimedia</h1>
+
+    <header>
+        <h1>BLOG EDUCATIVO HTML</h1>
+    </header>
+
+    <div class="layout">
+
+        <aside class="menu">
+            <h2 class="menu-title">Categorías</h2>
+
+            <p class="menu-info">
+                Selecciona una categoría para ver sus etiquetas y ejemplos prácticos.
+            </p>
+
+            <a href="../Index.html">Inicio</a>
+            <a href="Estructurales.html">Estructurales</a>
+            <a href="Listas.html">Listas</a>
+            <a href="Formularios.html">Formularios</a>
+            <a href="Tablas.html">Tablas</a>
+            <a href="Multimedia.html" class="active">Multimedia</a>
+        </aside>
+
+        <main class="contenido">
+            <div>
+
+                <h2>Elementos Multimedia</h2>
         <p>Los elementos multimedia en HTML son aquellos que permiten la inclusión de contenido audiovisual en una
             página web. Estos elementos son esenciales para crear experiencias interactivas y atractivas para los
             usuarios. Algunos de los elementos multimedia más comunes incluyen:</p>
@@ -51,7 +66,7 @@
                         &lt;audio src="ruta/del/audio.mp3" controls&gt;&lt;/audio&gt;
                     </code>
                 </pre>
-                <audio src="../assets/audio/audio.mp3" controls></audio>
+                <audio src="../assets/img/Multimedia/mondongo.mp3" controls></audio>
                 <br>
                 <button class="copy" onclick="copiarCodigo('codigo5')">Copiar código</button>
 
@@ -67,11 +82,12 @@
             <h4>ejemplo de uso de atributos:</h4>
             <pre>   
                 <code id="codigo8">
-                    &lt;audio src="ruta/del/audio.mp3" controls autoplay loop&gt;&lt;/audio&gt;
+                    &lt;audio src="ruta/del/audio.mp3" controls autoplay muted&gt;&lt;/audio&gt;
                 </code>
             </pre>
-            <audio src="../assets/audio/audio.mp3" controls autoplay loop></audio>
             <button class="copy" onclick="copiarCodigo('codigo8')">Copiar código</button>
+            <br>
+            <audio src="../assets/img/Multimedia/mondongo.mp3" controls autoplay muted></audio>
             <li><strong>&lt;video&gt;</strong>: Se utiliza para insertar archivos de video en una página web. El atributo "src" se utiliza para especificar la URL del archivo de video, y el atributo "controls" agrega controles de reproducción al elemento de video.</li>
             <h5>Ejemplo de uso de &lt;video&gt;:</h5>
             <figure class="examples">
